@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-accent: #ff6b00;
+  --color-accent-light: rgba(255, 107, 0, 0.12);
+  --color-emerald-success: #34c759;
+}
+
+/* Base resets & customized system layout fonts */
+body {
+  font-family: var(--font-sans);
+  background-color: #f8f8f8;
+  color: #111111;
+  transition: background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-x: hidden;
+}
+
+body.dark {
+  background-color: #0a0a0a;
+  color: #f3f4f6;
+}
+
+/* Glassmorphism design systems like Apple & Linear */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(17, 17, 17, 0.05);
+}
+
+body.dark .glass {
+  background: rgba(13, 13, 13, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.dark .glass-card {
+  background: #111111;
+  border: 1px solid #1f1f1f;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Active highlights */
+.glass-card:hover {
+  border-color: rgba(255, 107, 0, 0.25);
+}
+
+body.dark .glass-card:hover {
+  border-color: rgba(255, 107, 0, 0.4);
+}
+
+/* Dynamic glow values */
+.glow-accent {
+  box-shadow: 0 0 35px rgba(255, 107, 0, 0.08);
+}
+
+body.dark .glow-accent {
+  box-shadow: 0 0 50px rgba(255, 107, 0, 0.15);
+}
+
+/* Noise overlay utility */
+.noise-bg {
+  position: relative;
+}
+
+.noise-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.012;
+  pointer-events: none;
+  z-index: 1;
+}
+
+body.dark .noise-bg::before {
+  opacity: 0.024;
+}
+
+/* System-like scrollbar behaviors */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(17, 17, 17, 0.08);
+  border-radius: 10px;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6b00;
+}
+
+/* Interactive animations and transitions */
+.smooth-transition {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Horizontal reading progress indicators */
+.progress-bar-glow {
+  box-shadow: 0 0 8px rgba(255, 107, 0, 0.5);
+}
