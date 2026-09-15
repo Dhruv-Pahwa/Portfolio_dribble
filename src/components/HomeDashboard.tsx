@@ -5,6 +5,7 @@ import { Play, Pause, Linkedin } from "lucide-react";
 import lucknowMap from "../../assets/lucknow_map.png";
 import profilePic from "../../assets/670971899_18177056833391528_6212655494246129999_n.jpg";
 import linkedinImg from "../../assets/1769889969555.jpg";
+import githubImg from "../../image.png";
 
 export default function HomeDashboard() {
   const [activeProfileTab, setActiveProfileTab] = useState<"about" | "education" | "skills">("about");
@@ -67,7 +68,9 @@ export default function HomeDashboard() {
             View Resume
           </a>
           <p className={`font-medium text-lg leading-snug max-w-sm ${isDark ? 'text-neutral-400' : 'text-[#666]'}`}>
-            Feel free to explore my portfolio and reach out — I'd love to connect!
+            Feel free to explore my portfolio and<br />
+            reach out —<br />
+            I'd love to connect!
           </p>
         </div>
       </section>
@@ -132,7 +135,7 @@ export default function HomeDashboard() {
           <div className="flex-1 w-full flex flex-col items-center justify-center mt-4 z-10">
             <div className="relative w-full aspect-[16/10] max-w-[260px] rounded-3xl overflow-hidden shadow-xl transform group-hover:scale-105 group-hover:-translate-y-2 transition-all duration-300">
               <img
-                src="image.png"
+                src={githubImg}
                 alt="GitHub Projects Thumbnail"
                 className="w-full h-full object-cover bg-neutral-100"
               />
