@@ -223,7 +223,7 @@ export default function HomeDashboard() {
                     </div>
                     <p className="text-xs font-medium text-accent">B.Sc. Data Science & Artificial Intelligence</p>
                     <p className={`text-[10.5px] leading-normal ${isDark ? 'text-neutral-500' : 'text-neutral-500'}`}>
-                      Grade: GPA 3.94 (Distinction) &bull; UN Millennium Fellow &bull; AI Guild Core Member &bull; Christ Consulting
+                      Grade: CGPA 9.6 (Distinction) &bull; UN Millennium Fellow &bull; AI Guild Core Member &bull; Christ Consulting
                     </p>
                   </div>
 
