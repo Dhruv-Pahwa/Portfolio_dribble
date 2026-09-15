@@ -43,7 +43,7 @@ export default function HomeDashboard() {
           <h2 className={`text-5xl md:text-[64px] font-bold tracking-tight leading-[1.1] mt-2 flex flex-wrap items-center gap-x-4 ${isDark ? 'text-neutral-600' : 'text-[#c8c8c8]'}`}>
             I'm a <span className={isDark ? 'text-white' : 'text-[#111]'}>Data & AI Scientist</span>
             <div className="flex items-center flex-wrap gap-4 mt-2 w-full md:w-auto md:mt-0">
-              <span className="text-[#ff6b00]">& Analyst.</span>
+              <span className="text-[#ff6b00]">& Product Manager.</span>
               <div className={`flex items-center gap-2 rounded-full border px-4 py-1.5 shadow-sm h-[40px] ${isDark ? 'border-neutral-700 bg-[#1a1a1a]' : 'border-neutral-200 bg-white'}`}>
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#34c759] opacity-75"></span>
