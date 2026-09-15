@@ -2,79 +2,79 @@ import { Project, ExperienceItem, SkillNode, BlogPost, Testimonial } from "./typ
 
 export const projectsData: Project[] = [
   {
-    id: "amorphic-ai",
-    name: "Amorphic AI",
-    shortDescription: "A next-generation neural engine performing real-time video compositing and spatial styling at the edge.",
-    longDescription: "An experimental media synthesizer that runs deep neural stylization networks in-browser. Built to study human-computer creative partnerships, it bridges standard media pipelines with WebGPU tensor operations to render cinematic-grade, zero-latency visual effects.",
-    techStack: ["PyTorch", "Rust", "WebGPU", "TypeScript", "WASM"],
-    problemSolved: "Traditional neural style transfer flows require costly servers and introduce massive latency. Amorphic AI leverages local GPU shader compilation to lower runtime operational expenses to exactly $0.00 while guaranteeing <6ms per frame render timelines.",
+    id: "dhruvprep",
+    name: "dhruvprep (PyPI Package)",
+    shortDescription: "A published Python machine learning data preprocessing library with 6+ modular utilities.",
+    longDescription: "Architected and published an open-source Python preprocessing package featuring modular utilities for automated data quality checks, feature scaling, categorical encoding, and multicollinearity detection. Streamlined ML pipelines across 5K+ record datasets.",
+    techStack: ["Python", "PyPI", "Scikit-learn", "Pandas", "NumPy"],
+    problemSolved: "Manual feature scaling, encoding, and multicollinearity checks introduce repetitive code and data leakage. Built reusable pipelines that streamlined data preparation by 60–70%.",
     keyMetrics: [
-      { label: "Daily Active Users", value: "14,200+" },
-      { label: "Rendering Speed", value: "62 FPS" },
-      { label: "Server Cost Cut", value: "100%" }
+      { label: "Efficiency Gain", value: "60-70%" },
+      { label: "Modular Utilities", value: "6+" },
+      { label: "Dataset Scale", value: "5K+ Records" }
     ],
-    liveLink: "#",
-    codeLink: "#",
-    image: "https://picsum.photos/seed/amorphic/800/600",
+    liveLink: "https://pypi.org/project/dhruvprep/",
+    codeLink: "https://github.com/Dhruv-Pahwa/dhruvprep",
+    image: "https://picsum.photos/seed/dhruvprep/800/600",
+    status: "live",
+    category: "Data Science",
+    featured: true
+  },
+  {
+    id: "generative-transformer-15m",
+    name: "15M-Param Decoder Transformer",
+    shortDescription: "Decoder-only Generative Transformer language model built from scratch in PyTorch.",
+    longDescription: "Architected and trained a 15M-parameter decoder-only Transformer model from scratch using PyTorch. Implemented multi-head self-attention mechanisms, custom tokenization, training pipeline, and automated evaluation checkpoints.",
+    techStack: ["PyTorch", "Python", "Transformers", "Hugging Face", "Generative AI"],
+    problemSolved: "Off-the-shelf fine-tuning hides core attention mechanics. Built custom validation checkpoints and achieved a final training loss of 1.24 (40% reduction over 10 epochs).",
+    keyMetrics: [
+      { label: "Model Parameters", value: "15M" },
+      { label: "Loss Reduction", value: "40%" },
+      { label: "Final Loss", value: "1.24" }
+    ],
+    liveLink: "https://github.com/Dhruv-Pahwa",
+    codeLink: "https://github.com/Dhruv-Pahwa",
+    image: "https://picsum.photos/seed/transformer15m/800/600",
     status: "live",
     category: "AI & ML",
     featured: true
   },
   {
-    id: "linear-sync",
-    name: "Linear Sync",
-    shortDescription: "An ultra-low latency serverless state synchronization protocol mapping collaborative multi-tenant operations.",
-    longDescription: "A modern state synchronization engine built to coordinate conflicts across geographically separated distributed databases. Merges conflict-free replicated data types (CRDTs) with high-efficiency binary transport serialization schemas.",
-    techStack: ["Go", "Rust", "gRPC", "Redis", "PostgreSQL", "Docker"],
-    problemSolved: "Collaborative canvas tools suffer from high edit colliding ratios on cellular networks. Integrated a custom vector clock and backpressure control line, compressing package overhead by 73% and eliminating 99.8% of manual sync branch merges.",
+    id: "secure-file-transfer",
+    name: "Secure File Transfer Workflows",
+    shortDescription: "End-to-end secure file transfer platform with automated recovery workflows built during IIT Roorkee research internship.",
+    longDescription: "Designed and validated end-to-end workflows for a secure file transfer platform across distributed systems. Tested automated recovery processes through negative and edge-case scenarios with 100% traceable audit logging.",
+    techStack: ["Python", "Distributed Systems", "System Architecture", "Fault Tolerance", "Logging"],
+    problemSolved: "Distributed file recovery failures and untracked audit logs create data compliance risks. Enabled 80% faster file recovery with 100% traceable audit logs.",
     keyMetrics: [
-      { label: "Average Latency", value: "12ms" },
-      { label: "Bandwidth Saved", value: "73%" },
-      { label: "System Uptime", value: "99.999%" }
+      { label: "Recovery Speed", value: "+80%" },
+      { label: "Audit Traceability", value: "100%" },
+      { label: "System Reliability", value: "High" }
     ],
     liveLink: "#",
-    codeLink: "#",
-    image: "https://picsum.photos/seed/linearsync/800/600",
-    status: "beta",
+    codeLink: "https://github.com/Dhruv-Pahwa",
+    image: "https://picsum.photos/seed/iitroorkee/800/600",
+    status: "internal",
     category: "Systems",
-    featured: true
-  },
-  {
-    id: "arcane-browser-core",
-    name: "Arcane Browser Core",
-    shortDescription: "Memory-safe sandboxed rendering tab scheduler extension for privacy-oriented WebKit instances.",
-    longDescription: "An experimental sandboxing environment that orchestrates visual frames, network access triggers, and memory heaps across nested web frame trees, preventing sidebar script injections and memory footprint leakages.",
-    techStack: ["Rust", "WASM", "WebKit", "C++", "TypeScript"],
-    problemSolved: "Heavy dynamic web app loading schedules trigger garbage collection spikes and CPU throttling. Arcane uses a modern pre-emptive task scheduler to isolate background frame scripts, cutting browser container memory usage by half.",
-    keyMetrics: [
-      { label: "Memory Reduced", value: "52%" },
-      { label: "Frame Stutter", value: "-91%" },
-      { label: "Third-party Blocked", value: "100%" }
-    ],
-    liveLink: "#",
-    codeLink: "#",
-    image: "https://picsum.photos/seed/arcane/800/600",
-    status: "live",
-    category: "Frontend",
     featured: false
   },
   {
-    id: "atlas-maps",
-    name: "Atlas Maps",
-    shortDescription: "A high-fidelity client-side interactive geographic vector engine utilizing modern canvas mesh subdivision.",
-    longDescription: "An interactive geographical mapping library written to render dense demographic layers inside simple canvas elements. Builds on top of raw WebGL frameworks to slice, map, and morph rich geographical tiles seamlessly.",
-    techStack: ["React", "TypeScript", "D3.js", "WebGL", "HTML5 Canvas"],
-    problemSolved: "Parsing multi-gigabyte coordinate sets crashed client devices on mobile viewports. Developed a quad-tree division schema to lazily stream and decode coordinates on a secondary web worker, preventing UI thread freeze cycles.",
+    id: "decentralized-identity-etl",
+    name: "Decentralized Identity ETL Pipeline",
+    shortDescription: "Smart contract deployment & identity ETL pipelines engineered during DRDO internship.",
+    longDescription: "Evaluated smart-contract deployment using Hardhat and OpenZeppelin across 3+ security pipelines. Built decentralized-identity ETL pipelines to support data engineering initiatives across multi-geography engagements.",
+    techStack: ["Hardhat", "OpenZeppelin", "Solidity", "ETL", "Python", "Data Engineering"],
+    problemSolved: "High access-control overhead and fragmented security pipelines. Reduced access-control overhead by 35% and defined operational KPIs for cross-functional teams.",
     keyMetrics: [
-      { label: "Rendering Latency", value: "<16ms" },
-      { label: "Max Node Streams", value: "5.4M" },
-      { label: "FPS on Mobile", value: "58 FPS" }
+      { label: "Overhead Reduced", value: "35%" },
+      { label: "Security Pipelines", value: "3+" },
+      { label: "Teams Managed", value: "4" }
     ],
     liveLink: "#",
-    codeLink: "#",
-    image: "https://picsum.photos/seed/atlasmap/800/600",
-    status: "live",
-    category: "Data Science",
+    codeLink: "https://github.com/Dhruv-Pahwa",
+    image: "https://picsum.photos/seed/drdopipeline/800/600",
+    status: "internal",
+    category: "Systems",
     featured: false
   }
 ];
@@ -137,28 +137,29 @@ export const experienceData: ExperienceItem[] = [
 ];
 
 export const skillsData: SkillNode[] = [
-  // AI & ML
-  { name: "Generative AI", proficiency: 95, category: "AI & ML", experienceYears: 2, details: "Building LLM agents, prompt engineering, RAG, and custom fine-tuning pipelines." },
-  { name: "Machine Learning", proficiency: 93, category: "AI & ML", experienceYears: 3, details: "Developing predictive models, supervised/unsupervised classification, clustering, and regressions." },
+  // Deep Learning & GenAI
+  { name: "PyTorch", proficiency: 96, category: "AI & ML", experienceYears: 3, details: "Building custom neural networks, Transformer architectures, training loops, and loss optimization." },
+  { name: "Transformers & Hugging Face", proficiency: 95, category: "AI & ML", experienceYears: 2, details: "Architecting decoder-only models, attention mechanisms, fine-tuning, and model evaluation." },
+  { name: "Generative AI & LLMs", proficiency: 94, category: "AI & ML", experienceYears: 2, details: "Developing prompt pipelines, RAG implementations, LangChain, and Agentic AI systems." },
+  { name: "Scikit-learn", proficiency: 95, category: "AI & ML", experienceYears: 3, details: "Regression, classification, ensemble methods, dimensionality reduction, clustering, and cross-validation." },
 
-  // Data Science
-  { name: "Python", proficiency: 96, category: "Data Science", experienceYears: 4, details: "Core language for data manipulation, algorithmic pipelines, and machine learning models." },
-  { name: "SQL", proficiency: 94, category: "Data Science", experienceYears: 4, details: "Writing complex analytical queries, schema optimization, and database architecture." },
-  { name: "Data Analytics", proficiency: 92, category: "Data Science", experienceYears: 3, details: "Deriving actionable insights, trend analysis, and descriptive analytics across large databases." },
-  { name: "Data Modeling", proficiency: 90, category: "Data Science", experienceYears: 3, details: "Designing entity-relationship diagrams, dimensional modeling, and data warehouse structures." },
+  // Data Science & Analytics
+  { name: "Python", proficiency: 98, category: "Data Science", experienceYears: 4, details: "Primary language for data science, ML engineering, PyPI packages, and algorithm design." },
+  { name: "SQL & Data Modeling", proficiency: 95, category: "Data Science", experienceYears: 3, details: "Writing complex analytical queries, schema optimization, dimensional modeling, and ETL pipelines." },
+  { name: "Pandas & NumPy", proficiency: 97, category: "Data Science", experienceYears: 4, details: "High-performance vector operations, data manipulation, cleaning, and preprocessing." },
+  { name: "Feature Engineering", proficiency: 94, category: "Data Science", experienceYears: 3, details: "Multicollinearity detection, categorical encoding, scaling, and feature selection." },
+  { name: "Statistical Analysis", proficiency: 92, category: "Data Science", experienceYears: 3, details: "Exploratory data analysis, hypothesis testing, probability distributions, and evaluation metrics." },
 
-  // Systems
-  { name: "AWS", proficiency: 88, category: "Systems", experienceYears: 2, details: "Deploying cloud servers, storing data in S3, and leveraging serverless Lambdas and RDS databases." },
-  { name: "Power BI", proficiency: 92, category: "Systems", experienceYears: 3, details: "Designing automated reporting dashboards, DAX queries, and robust data connections." },
-  { name: "Tableau", proficiency: 90, category: "Systems", experienceYears: 3, details: "Creating interactive visual analytics, calculated fields, and executive summaries." },
-  { name: "Business Intelligence", proficiency: 93, category: "Systems", experienceYears: 3, details: "Formulating KPI metrics, ETL processing pipelines, and data warehouse design." },
+  // Systems & Data Engineering
+  { name: "ETL & Spark", proficiency: 90, category: "Systems", experienceYears: 2, details: "Building decentralized ETL pipelines, data streaming, and Apache Spark transformations." },
+  { name: "AWS & Docker", proficiency: 88, category: "Systems", experienceYears: 2, details: "AWS Cloud Essentials, server deployment, containerization, MLflow, and cloud workflows." },
+  { name: "Vector Databases", proficiency: 90, category: "Systems", experienceYears: 2, details: "Indexing and querying high-dimensional embeddings for vector search and RAG." },
+  { name: "Streamlit & Flask", proficiency: 92, category: "Systems", experienceYears: 2, details: "Building interactive ML dashboards, web endpoints, and REST APIs for model deployment." },
 
-  // Consulting (representing Consulting & Advisory category in view)
-  { name: "Digital Transformation", proficiency: 90, category: "Consulting", experienceYears: 2, details: "Advising on tech stack adoption, cloud migration, and automated operations." },
-  { name: "Technology Advisory", proficiency: 91, category: "Consulting", experienceYears: 2, details: "Evaluating tech blueprints, performance gaps, and scalability pathways." },
-  { name: "Stakeholder Management", proficiency: 93, category: "Consulting", experienceYears: 3, details: "Aligning technical timelines with business metrics and presenting outcomes." },
-  { name: "Client Engagement", proficiency: 92, category: "Consulting", experienceYears: 3, details: "Managing feedback loops, requirements elicitation, and high-trust communications." },
-  { name: "Agile Methodology", proficiency: 95, category: "Consulting", experienceYears: 3, details: "Leading sprint planning, standups, retrospectives, and managing backlog refinement." }
+  // Visualization & Leadership (Consulting)
+  { name: "Power BI & Tableau", proficiency: 94, category: "Tools", experienceYears: 3, details: "Interactive executive dashboards, automated reporting, DAX queries, and KPI tracking." },
+  { name: "Stakeholder Management", proficiency: 95, category: "Tools", experienceYears: 3, details: "Co-leading Corporate Club (11 members), organizing 5+ client sessions for 200+ students." },
+  { name: "Agile & Product Delivery", proficiency: 93, category: "Tools", experienceYears: 3, details: "Translating business requirements into technical specs, managing sprint workflows and project roadmaps." }
 ];
 
 export const blogPostsData: BlogPost[] = [

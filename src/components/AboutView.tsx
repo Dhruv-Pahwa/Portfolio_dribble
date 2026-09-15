@@ -21,10 +21,10 @@ export default function AboutView() {
   ];
 
   const milestones = [
-    { year: "2026", event: "Research Intern at IIT Roorkee", detail: "Investigating advanced AI systems and edge computing models." },
-    { year: "2025", event: "DRDO & UN Millennium Fellow", detail: "Pioneered secure blockchain nodes and worked on sustainable development initiatives." },
-    { year: "2024", event: "AI Intern at Infosys", detail: "Devised fine-tuning flows for attention transformers and NLP configurations." },
-    { year: "2023", event: "Equity Research at MMF", detail: "Conducted quantitative market projections and algorithmic data modeling." },
+    { year: "2026", event: "Research Intern at IIT Roorkee", detail: "Designed secure file transfer workflows and automated recovery with 100% traceable audit logs." },
+    { year: "2025", event: "Blockchain & AI Intern at DRDO", detail: "Optimized smart contract security pipelines (Hardhat/OpenZeppelin) and decentralized identity ETL." },
+    { year: "2024", event: "Published dhruvprep & 15M Transformer", detail: "Released PyPI preprocessing library and architected 15M-parameter Transformer from scratch." },
+    { year: "2023", event: "B.Sc. Data Science & AI at Christ Univ.", detail: "Graduating with 9.6/10 CGPA, Merit Scholarships for Academic Excellence." },
   ];
 
   const funTrivia = [
@@ -51,7 +51,7 @@ export default function AboutView() {
             Designing systems that bridge human creativity with strict machine precision.
           </h2>
           <p className="font-sans text-base text-[#666666] dark:text-[#999999] leading-relaxed">
-            I am a multi-disciplinary Data & AI Scientist, Analyst, and Researcher based in India. 
+            I am a multi-disciplinary Data & AI Scientist, Product Manager, and Researcher based in India. 
             I synthesize ideas from mathematical models, quantitative research, machine learning pipelines, 
             and deep neural networks to engineer data-driven solutions.
           </p>

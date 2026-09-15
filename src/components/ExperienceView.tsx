@@ -68,11 +68,9 @@ export default function ExperienceView() {
               <span className="font-mono text-[9.5px] font-bold text-accent">REPRESENTATIVE CV</span>
               <p className="text-[10px] text-neutral-500 mt-1">Compiled in single-page design spec standard.</p>
               <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  alert("Dhruv's signature resume (PDF format) is downloading. This represents an exact printable copy of this vector dashboard's verified credentials.");
-                }}
+                href="/Dhruv_Pahwa_Resume.pdf"
+                target="_blank"
+                download="Dhruv_Pahwa_Resume.pdf"
                 className="mt-3.5 inline-flex justify-center items-center gap-1.5 w-full bg-black hover:bg-neutral-800 text-white dark:bg-white dark:text-black dark:hover:bg-neutral-100 text-xs py-2 rounded-lg font-semibold transition-colors"
               >
                 <span>Download Resume.pdf</span>

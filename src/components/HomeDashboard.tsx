@@ -59,7 +59,7 @@ export default function HomeDashboard() {
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
           <a
-            href="https://drive.google.com/file/d/1Or0dX2-T4SjXjCxavhEYWb29frqLDVnl/view?usp=drive_link"
+            href="/Dhruv_Pahwa_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={`rounded-full px-8 py-4 text-sm font-semibold transition-transform hover:scale-105 inline-block text-center ${isDark ? 'bg-white text-[#111]' : 'bg-[#111] text-white'}`}
@@ -86,7 +86,7 @@ export default function HomeDashboard() {
               <div className={`relative z-10 h-3 w-3 rounded-full mt-1 ${isDark ? 'bg-white' : 'bg-[#111]'}`}></div>
               <div>
                 <h4 className={`font-bold leading-tight ${isDark ? 'text-white' : 'text-[#111]'}`}>Research Intern</h4>
-                <p className={`text-xs mt-0.5 ${isDark ? 'text-neutral-500' : 'text-[#999]'}`}>IIT, Roorkee &bull; Jan 2026 - Jun 2026</p>
+                <p className={`text-xs mt-0.5 ${isDark ? 'text-neutral-500' : 'text-[#999]'}`}>IIT, Roorkee &bull; Jan 2026 - Apr 2026</p>
               </div>
             </div>
 
@@ -132,7 +132,7 @@ export default function HomeDashboard() {
           <div className="flex-1 w-full flex flex-col items-center justify-center mt-4 z-10">
             <div className="relative w-full aspect-[16/10] max-w-[260px] rounded-3xl overflow-hidden shadow-xl transform group-hover:scale-105 group-hover:-translate-y-2 transition-all duration-300">
               <img
-                src="https://onboardbase.com/blog/github/card.jpg"
+                src="image.png"
                 alt="GitHub Projects Thumbnail"
                 className="w-full h-full object-cover bg-neutral-100"
               />
@@ -206,9 +206,9 @@ export default function HomeDashboard() {
             <div className="mt-5 max-w-2xl">
               {activeProfileTab === "about" && (
                 <div className="space-y-2">
-                  <h3 className={`font-bold text-xl ${isDark ? 'text-white' : 'text-[#111]'}`}>Data & AI Scientist & Analyst</h3>
+                  <h3 className={`font-bold text-xl ${isDark ? 'text-white' : 'text-[#111]'}`}>Data & AI Scientist & Product Manager</h3>
                   <p className={`text-sm leading-relaxed ${isDark ? 'text-neutral-400' : 'text-[#666]'}`}>
-                    Passionate about compiling predictive pipelines, orchestrating neural configurations, and extracting actionable intelligence from massive vector datasets. Bridging standard analytic frameworks with robust deep learning systems.
+                    Passionate about building predictive pipelines, developing intelligent systems, and turning large-scale data into actionable product insights. Bridging machine learning, analytics, and product strategy to create scalable solutions with measurable user impact and lasting value.
                   </p>
                 </div>
               )}
@@ -264,8 +264,8 @@ export default function HomeDashboard() {
                 key={tab.id}
                 onClick={() => setActiveProfileTab(tab.id as any)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${activeProfileTab === tab.id
-                    ? isDark ? "bg-white text-[#111] shadow-md" : "bg-[#111] text-white shadow-md"
-                    : isDark ? "text-neutral-500 hover:text-white" : "text-[#666] hover:text-[#111]"
+                  ? isDark ? "bg-white text-[#111] shadow-md" : "bg-[#111] text-white shadow-md"
+                  : isDark ? "text-neutral-500 hover:text-white" : "text-[#666] hover:text-[#111]"
                   }`}
               >
                 {tab.label}

@@ -126,7 +126,7 @@ export default function Navbar() {
                 <span>LinkedIn Network</span>
               </a>
               <a 
-                href="https://drive.google.com/file/d/1Or0dX2-T4SjXjCxavhEYWb29frqLDVnl/view?usp=drive_link" 
+                href="/Dhruv_Pahwa_Resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={`flex items-center gap-2.5 px-4 py-3 text-xs font-semibold rounded-xl transition-all ${

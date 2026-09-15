@@ -31,7 +31,7 @@ export interface ExperienceItem {
 export interface SkillNode {
   name: string;
   proficiency: number;
-  category: "AI & ML" | "Data Science" | "Systems" | "Frontend" | "Tools";
+  category: "AI & ML" | "Data Science" | "Systems" | "Frontend" | "Tools" | "Consulting";
   experienceYears: number;
   details: string;
 }
