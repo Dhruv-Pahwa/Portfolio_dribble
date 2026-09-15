@@ -67,10 +67,8 @@ export default function HomeDashboard() {
           >
             View Resume
           </a>
-          <p className={`font-medium text-lg leading-snug max-w-sm ${isDark ? 'text-neutral-400' : 'text-[#666]'}`}>
-            Feel free to explore my portfolio and<br />
-            reach out —<br />
-            I'd love to connect!
+          <p className={`font-medium text-lg leading-snug ${isDark ? 'text-neutral-400' : 'text-[#666]'}`}>
+            Feel free to explore my portfolio and reach out — I'd love to connect!
           </p>
         </div>
       </section>
